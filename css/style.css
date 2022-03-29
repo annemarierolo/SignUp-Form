@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(../images/bg-intro-desktop.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%, 1);
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content {
+    width: 75%;
+    margin-block-start: 15%;
+    color: white;
+}
+
+#title {
+    margin-block-end: 25px;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 700;
+}
+
+#text {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.right {
+    width: 50%;
+}
+
+.right-content {
+    margin-block-start: 15%;
+}
+
+.promotion {
+    font-size: 12px;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 6px 0px 0 hsl(249, 10%, 26%, 0.2);
+    color: white;
+    padding: 2px;
+    width: 63%;
+    border-radius: 5px;
+    text-align: center;
+    margin-block-end: 20px;
+}
+
+.form {
+    width: 60%;
+    box-shadow: 0 5px 0px 0 hsl(249, 10%, 26%, 0.2);
+    padding: 25px 0px 100px 30px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    display: grid;
+    grid-auto-rows: 25%;
+}
+
+.terms {
+    font-size: 10px;
+}
+
+#conditions {
+    text-indent: 10%;
+    color: hsl(246, 25%, 77%);
+    font-weight: 500;
+}
+
+#ts {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+input,
+#button {
+    border-radius: 5px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+input {
+    /* display: grid; */
+    /* grid-auto-rows: 50%; */
+    width: 89%;
+    padding: 10px;
+    text-indent: 12px;
+}
+
+input::placeholder {
+    font-weight: 600;
+    color: hsl(249, 10%, 26%);
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid hsl(249, 10%, 26%);
+}
+
+#button {
+    width: 94%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: hsl(154, 59%, 51%);
+    box-shadow: 0 3px 0px 0 hsl(154, 62%, 35%, 0.8);
+    border: transparent;
+    color: white;
+    font-weight: 500;
+}
+
+#icon {
+    position: absolute;
+    top: 222px;
+    right: 340px;
+    visibility: hidden;
+}
+
+#errors {
+    color: hsl(0, 93%, 68%);
+    visibility: hidden;
+    position: absolute;
+    top: 260px;
+    right: 320px;
+    font-size: 10px;
+    font-weight: 400;
+    margin-block-end: 30px;
+}
+
+.error {
+    border: 1px solid hsl(0, 93%, 68%) !important;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+;

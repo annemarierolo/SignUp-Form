@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="left-content">
+                <p id="title">Learn to code by watching others</p>
+                <p id="text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers thinks is invaluable.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-content">
+                <div class="promotion">
+                    <p><strong>Try it free 7 days then</strong> $20/mo. thereafter</p>
+                </div>
+                <form class="form" name="info">
+                    <div id="input-container">
+                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                    </div>
+                    <img id="icon" src="images/icon-error.svg" alt="icon error">
+                    <div id="errors">
+                        First Name cannot be empty
+                    </div>
+                    <div id="input-container">
+                        <input type="text" id="flname" name="lastname" placeholder="Last Name">
+                    </div>
+                    <img id="icon" src="images/icon-error.svg" alt="icon error">
+                    <div id="errors">
+                        Last Name cannot be empty
+                    </div>
+                    <div id="input-container">
+                        <input type="text" id="femail" name="email" placeholder="Email Address">
+                    </div>
+                    <img id="icon" src="images/icon-error.svg" alt="icon error">
+                    <div id="errors">
+                        Looks like this is not an email
+                    </div>
+                    <div id="input-container">
+                        <input type="text" id="fpass" name="password" placeholder="Password">
+                    </div>
+                    <img id="icon" src="images/icon-error.svg" alt="icon error">
+                    <div id="errors">
+                        Password cannot be empty
+                    </div>
+                    <div class="button">
+                        <button id="button" type="button" onclick="hasValue()">Claim your free trial</button>
+                    </div>
+                    <div class="terms">
+                        <p id="conditions">By clicking the button, you are agreeing to our <strong id="ts">Terms and Services</strong></p>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Annemarie Rolo</a>.
+        </p>
+    </footer> -->
+</body>
+<script type="text/javascript" src="js/javascript.js"></script>
+
+</html>
