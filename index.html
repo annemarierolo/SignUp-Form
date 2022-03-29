@@ -28,40 +28,50 @@
                     <p><strong>Try it free 7 days then</strong> $20/mo. thereafter</p>
                 </div>
                 <form class="form" name="info">
-                    <div id="input-container">
-                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                    <div class="area-container">
+                        <div class="input-container">
+                            <input type="text" id="firstname" name="firstname" placeholder="First Name" onkeyup="validate()">
+                            <img class="firstname-error icon" src="images/icon-error.svg" alt="icon error">
+                        </div>
+                        <div class="firstname-error errors">
+                            First Name cannot be empty
+                        </div>
                     </div>
-                    <img id="icon" src="images/icon-error.svg" alt="icon error">
-                    <div id="errors">
-                        First Name cannot be empty
+                    <div class="area-container">
+                        <div class="input-container">
+                            <input type="text" id="lastname" name="lastname" placeholder="Last Name" onkeyup="validate()">
+                            <img class="lastname-error icon" src="images/icon-error.svg" alt="icon error">
+                        </div>
+                        <div class="lastname-error errors">
+                            Last Name cannot be empty
+                        </div>
                     </div>
-                    <div id="input-container">
-                        <input type="text" id="flname" name="lastname" placeholder="Last Name">
+                    <div class="area-container">
+                        <div class="input-container">
+                            <input type="text" id="email" name="email" placeholder="Email Address" onkeyup="validate()">
+                            <img id="email-icon" class="email-error icon" src="images/icon-error.svg" alt="icon error">
+                        </div>
+                        <div class="email-error errors">
+                            Email cannot be empty
+                        </div>
+                        <div class="email-invalid errors">
+                            Looks like this is not an email
+                        </div>
                     </div>
-                    <img id="icon" src="images/icon-error.svg" alt="icon error">
-                    <div id="errors">
-                        Last Name cannot be empty
-                    </div>
-                    <div id="input-container">
-                        <input type="text" id="femail" name="email" placeholder="Email Address">
-                    </div>
-                    <img id="icon" src="images/icon-error.svg" alt="icon error">
-                    <div id="errors">
-                        Looks like this is not an email
-                    </div>
-                    <div id="input-container">
-                        <input type="text" id="fpass" name="password" placeholder="Password">
-                    </div>
-                    <img id="icon" src="images/icon-error.svg" alt="icon error">
-                    <div id="errors">
-                        Password cannot be empty
+                    <div class="area-container">
+                        <div class="input-container">
+                            <input type="password" id="password" name="password" placeholder="Password" onkeyup="validate()">
+                            <img class="password-error icon" src="images/icon-error.svg" alt="icon error">
+                        </div>
+                        <div class="password-error errors">
+                            Password cannot be empty
+                        </div>
                     </div>
                     <div class="button">
-                        <button id="button" type="button" onclick="hasValue()">Claim your free trial</button>
+                        <button id="button" type="button" onclick="validate()">Claim your free trial</button>
                     </div>
                     <div class="terms">
                         <p id="conditions">By clicking the button, you are agreeing to our <strong id="ts">Terms and Services</strong></p>
-
                     </div>
 
                 </form>
